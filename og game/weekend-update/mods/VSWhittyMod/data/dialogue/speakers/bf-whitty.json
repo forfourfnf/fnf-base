@@ -1,0 +1,24 @@
+{
+  "version": "1.0.0",
+  "name": "BF (Whitty)",
+  "assetPath": "bonus_week/dialogue/boyfriendPort",
+  "flipX": false,
+  "isPixel": false,
+  "scale": 0.8,
+  "offsets": [820, 265],
+  "animations": [
+    {
+      "name": "talkEnter",
+      "prefix": "BF Portrait Enter instance 1",
+      "offsets": [0, 0],
+      "frameRate": 12,
+      "looped": true
+    },
+    {
+      "name": "talk",
+      "prefix": "Boyfriend portrait idle instance 10",
+      "offsets": [0, 0],
+      "frameRate": 12
+    }
+  ]
+}

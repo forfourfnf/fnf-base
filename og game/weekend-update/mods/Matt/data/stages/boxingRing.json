@@ -1,0 +1,60 @@
+{
+  "props": [
+    {
+      "danceEvery": 0,
+      "zIndex": 10,
+      "position": [-600, -200],
+      "scale": [1, 1],
+      "animType": "sparrow",
+      "name": "ringBG",
+      "isPixel": false,
+      "assetPath": "stage assets/box/boxingnight1",
+      "scroll": [0.9, 0.9],
+      "animations": []
+    },
+    {
+      "danceEvery": 0,
+      "zIndex": 20,
+      "position": [-600, -300],
+      "scale": [1, 1],
+      "animType": "sparrow",
+      "name": "ringStandsIThink",
+      "isPixel": false,
+      "assetPath": "stage assets/box/boxingnight2",
+      "scroll": [0.7, 0.7],
+      "animations": []
+    },
+    {
+      "danceEvery": 0,
+      "zIndex": 30,
+      "position": [-600, -200],
+      "scale": [1, 1],
+      "animType": "sparrow",
+      "name": "theRing",
+      "isPixel": false,
+      "assetPath": "stage assets/box/boxingnight3",
+      "scroll": [1, 1],
+      "animations": []
+    }
+  ],
+  "cameraZoom": 0.8,
+  "version": "1.0.0",
+  "characters": {
+    "bf": {
+      "zIndex": 300,
+      "position": [989.5, 1085],
+      "cameraOffsets": [-100, -130]
+    },
+    "dad": {
+      "zIndex": 200,
+      "position": [335, 1085],
+      "cameraOffsets": [150, -100]
+    },
+    "gf": {
+      "zIndex": 100,
+      "cameraOffsets": [0, 0],
+      "position": [751.5, 987]
+    }
+  },
+  "name": "Boxing Ring"
+}

@@ -1,0 +1,45 @@
+import funkin.play.song.Song;
+import funkin.play.PlayState;
+import funkin.play.PlayStatePlaylist;
+import flixel.FlxG;
+import funkin.graphics.FunkinSprite;
+import funkin.util.Constants;
+import flixel.util.FlxTimer;
+import funkin.Paths;
+import funkin.audio.FunkinSound;
+
+class OverheadSong extends Song {
+    var hasPlayedCutscene:Bool;
+
+    function new()
+	{
+		super('overhead');
+	}
+
+    function onCountdownStart(event:SongLoadScriptEvent) {
+		super.onCountdownStart(event);
+
+        if (!PlayStatePlaylist.isStoryMode) {
+            hasPlayedCutscene = true;
+        }
+
+        if (!hasPlayedCutscene) {
+            trace('Pausing countdown to play cutscene.');
+
+            hasPlayedCutscene = true;
+
+            startCutscene();
+            event.cancel(); // CANCEL THE COUNTDOWN!
+        }
+	}
+
+
+
+    function startCutscene() {
+        startDialogue();
+    }
+
+    function startDialogue() {
+        PlayState.instance.startConversation('overhead');
+    }
+}

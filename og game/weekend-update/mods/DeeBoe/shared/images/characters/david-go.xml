@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="david-go.png">
+<SubTexture name="david-go idle0000" x="3407" y="0" width="306" height="821" frameX="-172" frameY="-244" frameWidth="720" frameHeight="1280" />
+<SubTexture name="david-go idle0001" x="3407" y="0" width="306" height="821" frameX="-172" frameY="-244" frameWidth="720" frameHeight="1280" />
+<SubTexture name="david-go idle0002" x="3407" y="0" width="306" height="821" frameX="-172" frameY="-244" frameWidth="720" frameHeight="1280" />
+<SubTexture name="david-go idle0003" x="3407" y="0" width="306" height="821" frameX="-172" frameY="-244" frameWidth="720" frameHeight="1280" />
+<SubTexture name="david-go idle0004" x="3407" y="0" width="306" height="821" frameX="-172" frameY="-244" frameWidth="720" frameHeight="1280" />
+<SubTexture name="david-go idle0005" x="3407" y="0" width="306" height="821" frameX="-172" frameY="-244" frameWidth="720" frameHeight="1280" />
+<SubTexture name="david-go idle0006" x="3407" y="0" width="306" height="821" frameX="-172" frameY="-244" frameWidth="720" frameHeight="1280" />
+<SubTexture name="david-go idle0007" x="3407" y="0" width="306" height="821" frameX="-172" frameY="-244" frameWidth="720" frameHeight="1280" />
+<SubTexture name="david-go idle0008" x="3407" y="0" width="306" height="821" frameX="-172" frameY="-244" frameWidth="720" frameHeight="1280" />
+<SubTexture name="david-go idle0009" x="3407" y="0" width="306" height="821" frameX="-172" frameY="-244" frameWidth="720" frameHeight="1280" />
+<SubTexture name="david-go idle0010" x="3407" y="0" width="306" height="821" frameX="-172" frameY="-244" frameWidth="720" frameHeight="1280" />
+<SubTexture name="david-go idle0011" x="3407" y="0" width="306" height="821" frameX="-172" frameY="-244" frameWidth="720" frameHeight="1280" />
+<SubTexture name="david-go idle0012" x="3407" y="0" width="306" height="821" frameX="-172" frameY="-244" frameWidth="720" frameHeight="1280" />
+<SubTexture name="david-go idle0013" x="3407" y="0" width="306" height="821" frameX="-172" frameY="-244" frameWidth="720" frameHeight="1280" />
+<SubTexture name="david-go idle0014" x="3407" y="0" width="306" height="821" frameX="-172" frameY="-244" frameWidth="720" frameHeight="1280" />
+<SubTexture name="david-go idle0015" x="2803" y="832" width="306" height="831" frameX="-174" frameY="-236" frameWidth="720" frameHeight="1280" />
+<SubTexture name="david-go idle0016" x="2803" y="0" width="306" height="832" frameX="-174" frameY="-236" frameWidth="720" frameHeight="1280" />
+<SubTexture name="david-go idle0017" x="2803" y="1663" width="300" height="827" frameX="-176" frameY="-237" frameWidth="720" frameHeight="1280" />
+<SubTexture name="david-go idle0018" x="3109" y="0" width="298" height="823" frameX="-178" frameY="-240" frameWidth="720" frameHeight="1280" />
+<SubTexture name="david-go idle0019" x="3109" y="0" width="298" height="823" frameX="-178" frameY="-240" frameWidth="720" frameHeight="1280" />
+<SubTexture name="david-go godown0000" x="2086" y="0" width="717" height="890" frameX="-3" frameY="-218" frameWidth="720" frameHeight="1280" />
+<SubTexture name="david-go godown0001" x="0" y="0" width="702" height="948" frameX="-14" frameY="-162" frameWidth="720" frameHeight="1280" />
+<SubTexture name="david-go godown0002" x="702" y="0" width="720" height="940" frameX="0" frameY="-170" frameWidth="720" frameHeight="1280" />
+<SubTexture name="david-go goright0000" x="1422" y="0" width="664" height="909" frameX="-19" frameY="-204" frameWidth="720" frameHeight="1280" />
+<SubTexture name="david-go goright0001" x="635" y="1850" width="644" height="870" frameX="-16" frameY="-230" frameWidth="720" frameHeight="1280" />
+<SubTexture name="david-go goright0002" x="655" y="948" width="674" height="893" frameX="-8" frameY="-220" frameWidth="720" frameHeight="1280" />
+<SubTexture name="david-go goleft0000" x="0" y="948" width="655" height="902" frameX="0" frameY="-167" frameWidth="720" frameHeight="1280" />
+<SubTexture name="david-go goleft0001" x="1919" y="1850" width="604" height="856" frameX="-46" frameY="-199" frameWidth="720" frameHeight="1280" />
+<SubTexture name="david-go goleft0002" x="0" y="1850" width="635" height="876" frameX="-20" frameY="-182" frameWidth="720" frameHeight="1280" />
+<SubTexture name="david-go goup0000" x="1329" y="948" width="623" height="891" frameX="-27" frameY="-212" frameWidth="720" frameHeight="1280" />
+<SubTexture name="david-go goup0001" x="1279" y="1850" width="640" height="866" frameX="-20" frameY="-232" frameWidth="720" frameHeight="1280" />
+<SubTexture name="david-go goup0002" x="2086" y="890" width="641" height="880" frameX="-19" frameY="-219" frameWidth="720" frameHeight="1280" />
+</TextureAtlas>

@@ -1,0 +1,148 @@
+import funkin.play.song.Song;
+import funkin.play.PlayState;
+import funkin.play.PlayStatePlaylist;
+import flixel.FlxG;
+import funkin.graphics.FunkinSprite;
+import funkin.util.Constants;
+import flixel.util.FlxTimer;
+import funkin.Paths;
+import funkin.audio.FunkinSound;
+import flixel.tweens.FlxEase;
+
+class LoFightSong extends Song {
+    var hasPlayedCutscene:Bool;
+
+    function new()
+	{
+		super('lo-fight');
+	}
+
+    function onCountdownStart(event:SongLoadScriptEvent) {
+		super.onCountdownStart(event);
+
+        if (!PlayStatePlaylist.isStoryMode) hasPlayedCutscene = true;
+
+        if (!hasPlayedCutscene) {
+            trace('Pausing countdown to play cutscene.');
+
+            hasPlayedCutscene = true;
+
+            startCutscene();
+            event.cancel(); // CANCEL THE COUNTDOWN!
+        }
+	}
+
+
+    function startCutscene() {
+        trace("Cutscene Start");
+
+        PlayState.instance.camHUD.visible = false;
+        PlayState.instance.currentStage.getDad().alpha = 0;
+        PlayState.instance.currentStage.getGirlfriend().alpha = 0;
+        PlayState.instance.currentStage.getBoyfriend().x += 400;
+
+        var cameraPoint = PlayState.instance.cameraFollowPoint.getPosition();
+        PlayState.instance.tweenCameraToPosition(cameraPoint.x, cameraPoint.y-140, 0, FlxEase.linear);
+
+        FunkinSound.playOnce(Paths.sound('bonus_week/city'));
+
+        // Whitty Stuff
+        var whittyCutscene = FunkinSprite.createSparrow(0, 0, 'bonus_week/whitty_cutscenes/whittyCutscene');
+        whittyCutscene.cameras = [PlayState.instance.camGame];
+        whittyCutscene.animation.addByPrefix('idle', 'Whitty Cutscene Startup 1', 24, false);
+        whittyCutscene.scrollFactor.set(1, 1);
+		whittyCutscene.updateHitbox();
+		whittyCutscene.screenCenter();
+        whittyCutscene.x = -300;
+        whittyCutscene.y = -140;
+        PlayState.instance.add(whittyCutscene);
+
+        // Fade In
+        var fadeIn = new FunkinSprite(-20, -20).makeSolidColor(FlxG.width * 1.5, FlxG.height * 1.5, 0xFF000000);
+        fadeIn.cameras = [PlayState.instance.camCutscene];
+        fadeIn.alpha = 1.0;
+        PlayState.instance.add(fadeIn);
+
+        new FlxTimer().start(0.3, function(timer:FlxTimer) {
+            fadeIn.alpha -= 0.15;
+
+            if (fadeIn.alpha > 0) {
+                timer.reset();
+            }
+            else {
+                fadeIn.alpha = 0;        
+
+                whittyCutscene.animation.play('idle');
+
+                new FlxTimer().start(1.5, function(timer:FlxTimer) {
+                    FunkinSound.playOnce(Paths.sound('bonus_week/rip'));
+
+                    new FlxTimer().start(0.4, function(timer:FlxTimer) {
+                        FunkinSound.playOnce(Paths.sound('bonus_week/fire'));
+
+                        new FlxTimer().start(4.0, function(timer:FlxTimer) {
+                            FunkinSound.playOnce(Paths.sound('bonus_week/beepboop'));
+                            
+                            PlayState.instance.tweenCameraToPosition(cameraPoint.x+500, cameraPoint.y-80, 3, FlxEase.cubeOut);
+                            PlayState.instance.currentStage.getBoyfriend().animation.play('singLEFT');
+
+
+                            new FlxTimer().start(2.5, function(timer:FlxTimer) {
+                                
+                                new FlxTimer().start(0.1, function(timer:FlxTimer) {
+                                    fadeIn.alpha += 0.15;
+
+                                    if (fadeIn.alpha < 1) {
+                                        timer.reset();
+                                    }
+                                    else {
+                                        fadeIn.alpha = 1;
+
+                                        PlayState.instance.remove(whittyCutscene);
+                                        PlayState.instance.currentStage.getDad().alpha = 1;
+                                        PlayState.instance.currentStage.getGirlfriend().alpha = 1;
+                                        PlayState.instance.currentStage.getBoyfriend().x -= 400;
+                                        PlayState.instance.tweenCameraToPosition(cameraPoint.x, cameraPoint.y, 0, FlxEase.linear);
+
+                                        new FlxTimer().start(1.0, function(timer:FlxTimer) {
+
+                                            new FlxTimer().start(0.3, function(timer:FlxTimer) {
+                                                fadeIn.alpha -= 0.15;
+
+                                                if (fadeIn.alpha > 0) {
+                                                    timer.reset();
+                                                }
+                                                else {
+                                                    fadeIn.alpha = 0;
+                                                    PlayState.instance.remove(fadeIn);
+
+                                                    startDialogue();
+                                                }
+                                            });
+                                        });
+                                    }
+                                });
+                            });
+                        });
+                    });
+                });
+            }
+        });
+    }
+           
+    function startDialogue() {
+        PlayState.instance.startConversation('lo-fight');
+    }
+
+    function onSongRetry(event:ScriptEvent) {
+        super.onSongRetry(event);
+
+        hasPlayedCutscene = true;
+    }
+
+    function onCreate(event:ScriptEvent):Void {
+        super.onCreate(event);
+
+        hasPlayedCutscene = false;
+    }
+}

@@ -1,0 +1,92 @@
+import funkin.modding.module.Module;
+import funkin.play.PlayState;
+import funkin.ui.options.OptionsState;
+import funkin.ui.options.PageName;
+import flixel.FlxG;
+import flixel.util.FlxSave;
+
+
+class ScrollSpeedThing extends Module {
+    var save: FlxSave;
+    var paused: false;
+
+    function onCreate(event) {
+        super.onCreate(event);
+        save = new FlxSave();
+        save.bind("scrollSpeedOption", "Anospo");
+        save.data.customScrollSpeed = (save.data.customScrollSpeed != null) ? save.data.customScrollSpeed : false;
+        save.data.scrollSpeed = (save.data.scrollSpeed != null) ? save.data.scrollSpeed : 1.0;
+        save.flush();
+    }
+
+    override function onStateChangeEnd(event) {
+        super.onStateChangeEnd(event);
+        if (Std.isOfType(event.targetState, OptionsState)) {
+            var prefs = event.targetState.pages.get(PageName.Preferences);
+            if (prefs != null) {
+                save = new FlxSave();
+                save.bind("scrollSpeedOption", "Anospo");
+                prefs.createPrefItemCheckbox("Custom Scroll Speed", "", (value) -> {
+                    save.data.customScrollSpeed = value;
+                    save.flush();
+                }, save.data.customScrollSpeed);
+                save.flush();
+            }
+        }
+    }
+
+    override function onCountdownStart(event) {
+        save = new FlxSave();
+        save.bind("scrollSpeedOption", "Anospo");
+        save.data.customScrollSpeed = (save.data.customScrollSpeed != null) ? save.data.customScrollSpeed : false;
+
+        if (!save.data.customScrollSpeed) return;
+        var state = PlayState.instance;
+        state.currentChart.scrollSpeed = save.data.scrollSpeed;
+    }
+
+    override function onPause(event) {
+        paused = true;
+    }
+
+    override function onUpdate(event) {
+        if (PlayState.instance == null) return;
+        var state = PlayState.instance;
+        if (state.rightWatermarkText != null) {
+            state.rightWatermarkText.alpha = state.get_isGamePaused() ? 1 : 0;
+        }
+        if (!paused) return;
+
+        save = new FlxSave();
+        save.bind("scrollSpeedOption", "Anospo");
+        if (!save.data.customScrollSpeed) return;
+
+        var state = PlayState.instance;
+        var speedSet = FlxG.keys.justPressed.LEFT ? -0.1 : (FlxG.keys.justPressed.RIGHT ? 0.1 : 0);
+        
+        if (save.data.scrollSpeed > 0.98 && save.data.scrollSpeed < 1.0){
+            save.data.scrollSpeed = 1.0;
+        } else if (save.data.scrollSpeed <= 0) {
+            save.data.scrollSpeed = 0.1;
+        } else {
+            save.data.scrollSpeed += speedSet;
+        }
+        state.currentChart.scrollSpeed = save.data.scrollSpeed;
+
+        if (state.rightWatermarkText != null) {
+            state.rightWatermarkText.text = "Scroll Speed: " + save.data.scrollSpeed;
+        }
+        save.flush();
+    }
+
+    override function onResume(event) {
+        paused = false;
+        save = new FlxSave();
+        save.bind("scrollSpeedOption", "Anospo");
+        if (!save.data.customScrollSpeed) return;
+
+        var state = PlayState.instance;
+        save.data.scrollSpeed = state.currentChart.scrollSpeed;
+        save.flush();
+    }
+}

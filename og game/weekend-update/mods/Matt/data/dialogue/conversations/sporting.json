@@ -1,0 +1,71 @@
+{
+  "version": "1.0.0",
+
+  "backdrop": {
+    "type": "solid",
+    "fadeTime": 2.0,
+    "color": "#BFB3DFD8"
+  },
+
+  "music": {
+    "asset": "",
+    "fadeTime": 2.0,
+    "looped": true
+  },
+
+  "outro": {
+    "type": "fade",
+    "fadeTime": 1.0
+  },
+
+  "dialogue": [
+    {
+      "speaker": "matt",
+      "speakerAnimation": "talkEnter",
+      "box": "default",
+      "boxAnimation": "enter",
+
+      "text": ["what are you two doing here? the singing lessons are on Tuesday."]
+    },
+    {
+      "speaker": "bf",
+      "speakerAnimation": "talkEnter",
+      "box": "default",
+      "boxAnimation": "speaking",
+
+      "text": ["bap."]
+    },
+    {
+      "speaker": "matt",
+      "speakerAnimation": "talkEnter",
+      "box": "default",
+      "boxAnimation": "speaking",
+
+      "text": ["im guessing you came back to challenge me again, are you not satisfied?"]
+    },
+    {
+      "speaker": "bf",
+      "speakerAnimation": "talkEnter",
+      "box": "default",
+      "boxAnimation": "speaking",
+
+      "text": ["bop bop barapiribop!"]
+    },
+    {
+      "speaker": "matt",
+      "speakerAnimation": "talkEnter",
+      "box": "default",
+      "boxAnimation": "speaking",
+
+      "text": ["i almost lost my job because of you, you humiliated me in front of everyone."]
+    },
+    {
+      "speaker": "matt",
+      "speakerAnimation": "talkEnter",
+      "box": "default",
+      "boxAnimation": "speaking",
+
+      "text": ["this isn't training anymore, kid."]
+    }
+  ]
+}

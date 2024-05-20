@@ -1,0 +1,92 @@
+{
+  "version": "1.0.0",
+
+  "backdrop": {
+    "type": "solid",
+    "fadeTime": 2.0,
+    "color": "#BFB3DFD8"
+  },
+
+  "music": {
+    "asset": "LunchboxScary",
+    "fadeTime": 2.0,
+    "looped": true
+  },
+
+  "outro": {
+    "type": "fade",
+    "fadeTime": 1.0
+  },
+
+  "dialogue": [
+    {
+      "speaker": "whitty",
+      "speakerAnimation": "agitated",
+      "box": "whitty_bubble",
+      "boxAnimation": "idle",
+
+      "text": [
+        "I see how it is."
+      ],
+      "speed": 2.0
+    },
+    {
+      "speaker": "bf-whitty",
+      "speakerAnimation": "talkEnter",
+      "box": "whitty_bubble",
+      "boxAnimation": "idle",
+
+      "text": [
+        "brep bappity boop"
+      ]
+    },
+    {
+      "speaker": "whitty",
+      "speakerAnimation": "agitated",
+      "box": "whitty_bubble",
+      "boxAnimation": "idle",
+
+      "text": ["You're really pushing my limits, dude."]
+    },
+    {
+      "speaker": "bf-whitty",
+      "speakerAnimation": "talkEnter",
+      "box": "whitty_bubble",
+      "boxAnimation": "idle",
+
+      "text": [
+        "bip bep skoo de boop"
+      ]
+    },
+    {
+      "speaker": "whitty",
+      "speakerAnimation": "agitated",
+      "box": "whitty_bubble",
+      "boxAnimation": "idle",
+
+      "text": [
+        "Well how about you go die in a ditch instead."
+      ]
+    },
+    {
+      "speaker": "bf-whitty",
+      "speakerAnimation": "talkEnter",
+      "box": "whitty_bubble",
+      "boxAnimation": "idle",
+
+      "text": [
+        "bepoobee skoop"
+      ]
+    },
+    {
+      "speaker": "whitty",
+      "speakerAnimation": "agitated",
+      "box": "whitty_bubble",
+      "boxAnimation": "idle",
+
+      "text": [
+        "...Don't make me do this."
+      ]
+    }
+  ]
+}

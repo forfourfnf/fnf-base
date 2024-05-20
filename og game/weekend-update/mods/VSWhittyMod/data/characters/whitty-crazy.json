@@ -1,0 +1,263 @@
+{
+	"version": "1.0.0",
+	"renderType": "sparrow",
+	"offsets": [
+		0,
+		0
+	],
+	"danceEvery": 1,
+	"scale": 1,
+	"name": "Whitty Crazy",
+	"cameraOffsets": [
+		0,
+		0
+	],
+	"flipX": false,
+	"singTime": 8,
+	"startingAnimation": "idle",
+	"isPixel": false,
+	"assetPath": "bonus_week/characters/WhittyCrazy",
+	"healthIcon": {
+		"isPixel": false,
+		"offsets": [
+			0,
+			0
+		],
+		"scale": 1,
+		"id": "whitty-crazy",
+		"flipX": false
+	},
+	"animations": [
+		{
+			"offsets": [
+				0,
+				-2
+			],
+			"flipY": false,
+			"frameRate": 24,
+			"prefix": "Whitty idle dance",
+			"name": "idle",
+			"looped": false,
+			"flipX": false
+		},
+		{
+			"offsets": [
+				0,
+				-1
+			],
+			"flipY": false,
+			"frameRate": 24,
+			"frameIndices": [
+				10,
+				11
+			],
+			"prefix": "Whitty idle dance",
+			"looped": true,
+			"name": "idle-hold",
+			"flipX": false
+		},
+		{
+			"offsets": [
+				60,
+				20
+			],
+			"flipY": false,
+			"frameRate": 24,
+			"prefix": "Whitty Sing Note LEFT",
+			"name": "singLEFT",
+			"looped": false,
+			"flipX": false
+		},
+		{
+			"offsets": [
+				60,
+				20
+			],
+			"flipY": false,
+			"frameRate": 24,
+			"frameIndices": [
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15
+			],
+			"prefix": "Whitty Sing Note LEFT",
+			"looped": true,
+			"name": "singLEFT-hold",
+			"flipX": false
+		},
+		{
+			"offsets": [
+				90,
+				-130
+			],
+			"flipY": false,
+			"frameRate": 24,
+			"prefix": "Whitty Sing Note DOWN",
+			"name": "singDOWN",
+			"looped": false,
+			"flipX": false
+		},
+		{
+			"offsets": [
+				89,
+				-131
+			],
+			"flipY": false,
+			"frameRate": 24,
+			"frameIndices": [
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15
+			],
+			"prefix": "Whitty Sing Note DOWN",
+			"looped": true,
+			"name": "singDOWN-hold",
+			"flipX": false
+		},
+		{
+			"offsets": [
+				4,
+				110
+			],
+			"flipY": false,
+			"frameRate": 24,
+			"prefix": "Whitty Sing Note UP",
+			"name": "singUP",
+			"looped": false,
+			"flipX": false
+		},
+		{
+			"offsets": [
+				4,
+				110
+			],
+			"flipY": false,
+			"frameRate": 24,
+			"frameIndices": [
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59
+			],
+			"prefix": "Whitty Sing Note UP",
+			"looped": true,
+			"name": "singUP-hold",
+			"flipX": false
+		},
+		{
+			"offsets": [
+				70,
+				-93
+			],
+			"flipY": false,
+			"frameRate": 24,
+			"prefix": "whitty sing note right",
+			"name": "singRIGHT",
+			"looped": false,
+			"flipX": false
+		},
+		{
+			"offsets": [
+				70,
+				-93
+			],
+			"flipY": false,
+			"frameRate": 24,
+			"frameIndices": [
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18
+			],
+			"prefix": "whitty sing note right",
+			"looped": true,
+			"name": "singRIGHT-hold",
+			"flipX": false
+		}
+	]
+}

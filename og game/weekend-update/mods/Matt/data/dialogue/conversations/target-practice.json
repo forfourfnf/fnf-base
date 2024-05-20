@@ -1,0 +1,47 @@
+{
+  "version": "1.0.0",
+
+  "backdrop": {
+    "type": "solid",
+    "fadeTime": 2.0,
+    "color": "#BFB3DFD8"
+  },
+
+  "music": {
+    "asset": "",
+    "fadeTime": 2.0,
+    "looped": true
+  },
+
+  "outro": {
+    "type": "fade",
+    "fadeTime": 1.0
+  },
+
+  "dialogue": [
+    {
+      "speaker": "matt",
+      "speakerAnimation": "talkEnter",
+      "box": "default",
+      "boxAnimation": "enter",
+
+      "text": ["i see that you have experience, i kinda went easy on you."]
+    },
+    {
+      "speaker": "bf",
+      "speakerAnimation": "talk",
+      "box": "default",
+      "boxAnimation": "speaking",
+
+      "text": ["boop beep, bap bap bop."]
+    },
+    {
+      "speaker": "matt",
+      "speakerAnimation": "talk",
+      "box": "default",
+      "boxAnimation": "speaking",
+
+      "text": ["this used to be the final exam, are you ready for the challenge?"]
+    }
+  ]
+}

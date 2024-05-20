@@ -1,0 +1,92 @@
+{
+	"version": "1.0.0",
+	"renderType": "multisparrow",
+	"offsets": [
+		0,
+		-10
+	],
+	"danceEvery": 1,
+	"scale": 1,
+	"name": "Matt (Mad)",
+	"flipX": false,
+	"cameraOffsets": [
+		0,
+		0
+	],
+	"singTime": 8,
+	"startingAnimation": "idle",
+	"isPixel": false,
+	"assetPath": "characters/mattangry",
+	"healthIcon": {
+		"offsets": [
+			0,
+			0
+		],
+		"isPixel": false,
+		"scale": 1,
+		"flipX": false,
+		"id": "matt"
+	},
+	"animations": [
+		{
+			"flipY": false,
+			"offsets": [
+				-10,
+				27
+			],
+			"frameRate": 24,
+			"prefix": "matt idle",
+			"flipX": false,
+			"looped": false,
+			"name": "idle"
+		},
+		{
+			"flipY": false,
+			"offsets": [
+				32,
+				-8
+			],
+			"frameRate": 24,
+			"prefix": "matt left note",
+			"flipX": false,
+			"looped": false,
+			"name": "singLEFT"
+		},
+		{
+			"flipY": false,
+			"offsets": [
+				5,
+				-1
+			],
+			"frameRate": 24,
+			"prefix": "matt down note",
+			"flipX": false,
+			"looped": false,
+			"name": "singDOWN"
+		},
+		{
+			"flipY": false,
+			"offsets": [
+				-12,
+				32
+			],
+			"frameRate": 24,
+			"prefix": "matt up note",
+			"flipX": false,
+			"looped": false,
+			"name": "singUP"
+		},
+		{
+			"flipY": false,
+			"offsets": [
+				-5,
+				5
+			],
+			"frameRate": 24,
+			"prefix": "matt right note",
+			"flipX": false,
+			"looped": false,
+			"name": "singRIGHT"
+		}
+	]
+}

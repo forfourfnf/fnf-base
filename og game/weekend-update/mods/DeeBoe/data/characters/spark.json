@@ -1,0 +1,54 @@
+{
+    "version": "1.0.0",
+    "name": "spark",
+    "renderType": "multisparrow",
+    "assetPath": "characters/Spark",
+    "flipX": false,
+    "singTime": 4,
+    "animations": [
+        {
+            "name": "idle",
+            "prefix": "Idle",
+            "offsets": [
+                0,
+                0
+            ]
+        },
+        {
+            "name": "singLEFT",
+            "prefix": "LEFT",
+            "offsets": [
+                85,
+                9
+            ]
+        },
+        {
+            "name": "singRIGHT",
+            "prefix": "RIGHT",
+            "offsets": [
+                -28,
+                -17
+            ]
+        },
+        {
+            "name": "singUP",
+            "prefix": "UP",
+            "offsets": [
+                -29,
+                137
+            ]
+        },
+        {
+            "name": "singDOWN",
+            "prefix": "DOWN",
+            "offsets": [
+                -10,
+                -100
+            ]
+        }
+    ],
+    "startingAnimation": "",
+    "isPixel": false,
+    "scale": 0.8,
+    "Made_With": "the cigs Converter"
+}

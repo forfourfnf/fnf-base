@@ -1,0 +1,69 @@
+{
+  "props": [
+    {
+      "danceEvery": 0,
+      "zIndex": 10,
+      "position": [-600, -200],
+      "scale": [1, 1],
+      "animType": "sparrow",
+      "name": "mainBG",
+      "isPixel": false,
+      "assetPath": "stage assets/sword/arena-bg",
+      "scroll": [1, 1],
+      "animations": []
+    },
+    {
+      "danceEvery": 1,
+      "zIndex": 20,
+      "position": [-650, 150],
+      "scale": [1, 1],
+      "animType": "sparrow",
+      "name": "crowd",
+      "isPixel": false,
+      "assetPath": "stage assets/sword/arena-characters",
+      "scroll": [1, 1],
+      "animations": [
+        {
+          "name": "idle",
+          "prefix": "bg-characters",
+          "frameRate": 24,
+          "looped": false,
+          "flipX": false,
+          "flipY": false
+        }
+      ]
+    },
+    {
+      "danceEvery": 0,
+      "zIndex": 30,
+      "position": [-650, 325],
+      "scale": [1, 1],
+      "animType": "sparrow",
+      "name": "rail",
+      "isPixel": false,
+      "assetPath": "stage assets/sword/railing",
+      "scroll": [1, 1],
+      "animations": []
+    }
+  ],
+  "cameraZoom": 0.7,
+  "version": "1.0.0",
+  "characters": {
+    "bf": {
+      "zIndex": 300,
+      "position": [989.5, 885],
+      "cameraOffsets": [-100, -100]
+    },
+    "dad": {
+      "zIndex": 200,
+      "position": [335, 885],
+      "cameraOffsets": [150, -100]
+    },
+    "gf": {
+      "zIndex": 100,
+      "cameraOffsets": [0, 0],
+      "position": [651.5, 787]
+    }
+  },
+  "name": "Swordplay Arena"
+}

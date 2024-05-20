@@ -1,0 +1,110 @@
+{
+	"version": "1.0.0",
+	"renderType": "sparrow",
+	"offsets": [
+		0,
+		0
+	],
+	"danceEvery": 1,
+	"scale": 1,
+	"name": "Girlfriend (Standing)",
+	"cameraOffsets": [
+		0,
+		0
+	],
+	"flipX": false,
+	"singTime": 8,
+	"startingAnimation": "danceRight",
+	"isPixel": false,
+	"assetPath": "bonus_week/characters/GF_Standing_Sway",
+	"healthIcon": {
+		"offsets": [
+			0,
+			0
+		],
+		"id": "gf-standing",
+		"flipX": false,
+		"isPixel": false,
+		"scale": 1
+	},
+	"animations": [
+		{
+			"flipY": false,
+			"offsets": [
+				0,
+				-11
+			],
+			"frameRate": 24,
+			"prefix": "Idle Left",
+			"frameIndices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5
+			],
+			"flipX": false,
+			"looped": false,
+			"name": "danceLeft"
+		},
+		{
+			"flipY": false,
+			"offsets": [
+				0,
+				-9
+			],
+			"frameRate": 24,
+			"prefix": "Idle Right",
+			"frameIndices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5
+			],
+			"flipX": false,
+			"looped": false,
+			"name": "danceRight"
+		},
+		{
+			"flipY": false,
+			"offsets": [
+				-23,
+				-16
+			],
+			"frameRate": 24,
+			"prefix": "Sad",
+			"frameIndices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11
+			],
+			"flipX": false,
+			"looped": false,
+			"name": "sad"
+		},
+		{
+			"flipY": false,
+			"offsets": [
+				10,
+				-9
+			],
+			"frameRate": 24,
+			"prefix": "Scared",
+			"flipX": false,
+			"looped": true,
+			"name": "scared"
+		}
+	]
+}

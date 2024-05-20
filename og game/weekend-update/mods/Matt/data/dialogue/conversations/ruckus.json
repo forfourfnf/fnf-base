@@ -1,0 +1,55 @@
+{
+  "version": "1.0.0",
+
+  "backdrop": {
+    "type": "solid",
+    "fadeTime": 2.0,
+    "color": "#BFB3DFD8"
+  },
+
+  "music": {
+    "asset": "",
+    "fadeTime": 2.0,
+    "looped": true
+  },
+
+  "outro": {
+    "type": "fade",
+    "fadeTime": 1.0
+  },
+
+  "dialogue": [
+    {
+      "speaker": "matt",
+      "speakerAnimation": "talkEnter",
+      "box": "default",
+      "boxAnimation": "enter",
+
+      "text": ["feeling the heat yet?"]
+    },
+    {
+      "speaker": "bf",
+      "speakerAnimation": "talkEnter",
+      "box": "default",
+      "boxAnimation": "speaking",
+
+      "text": ["boop!"]
+    },
+    {
+      "speaker": "matt",
+      "speakerAnimation": "talkEnter",
+      "box": "default",
+      "boxAnimation": "speaking",
+
+      "text": ["alright, this is a long one, can you keep up the rhythm?"]
+    },
+    {
+      "speaker": "bf",
+      "speakerAnimation": "talkEnter",
+      "box": "default",
+      "boxAnimation": "speaking",
+
+      "text": ["bap bop!"]
+    }
+  ]
+}
