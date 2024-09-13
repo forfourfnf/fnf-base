@@ -1,5 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TextureAtlas imagePath="letter.png">
-	<SubTexture name="letter idle0000" x="0" y="0" width="144" height="96" />
-	<SubTexture name="letter selected0000" x="144" y="0" width="144" height="96" />
-</TextureAtlas>
